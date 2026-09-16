@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>효소 기반 항암 치료 웹 시뮬레이션</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 프레젠테이션 전체를 감싸는 컨테이너 -->
+    <div class="presentation-container">
+
+        <!-- [슬라이드 1] 인트로 및 대사적 취약성 -->
+        <section class="slide bg-light">
+            <div class="content">
+                <h1>급성 림프모구 백혈병(ALL) 표적 치료</h1>
+                <p>암세포의 대사적 취약성을 역이용하는 효소 치료의 생물학적 원리</p>
+                <p class="guide-text">⬇ 마우스 휠을 내려 다음 슬라이드로 이동하세요</p>
+            </div>
+        </section>
+
+        <!-- [슬라이드 2] RNA 표적 치료 -->
+        <section class="slide bg-dark">
+            <div class="content">
+                <h2>1. RNA 표적 치료 (파티시란, 스핀라자)</h2>
+                <div class="placeholder-box">
+                    <p>이곳에 파티시란과 스핀라자의 작용 기작 텍스트를 작성하세요.</p>
+                    <p>(추후 디자인 담당자가 염기서열 이미지를 여기에 추가합니다.)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- [슬라이드 3] 효소 활용 시뮬레이터 (아스파라기나아제) -->
+        <section class="slide bg-light">
+            <div class="content">
+                <h2>2. 아스파라기나아제 대사 차단 시뮬레이션</h2>
+                
+                <!-- 시뮬레이션 작동 영역 -->
+                <div class="simulation-box">
+                    <div class="status-panel">
+                        <div class="status-item">
+                            <span>혈중 아스파라긴 농도: </span>
+                            <span id="asparagine-level" class="high">높음 (100%)</span>
+                        </div>
+                        <div class="status-item">
+                            <span>종양 세포 상태: </span>
+                            <span id="cancer-cell-status" class="danger">증식 중 (단백질 합성 활발)</span>
+                        </div>
+                    </div>
+
+                    <!-- 디자인 담당자가 효소 사량체 이미지를 넣을 곳 -->
+                    <div class="enzyme-image-area">
+                        <img id="enzyme-img" src="https://via.placeholder.com/150?text=Enzyme+Image" alt="아스파라기나아제">
+                    </div>
+
+                    <div class="control-panel">
+                        <label for="enzyme-slider">효소 투여량 조절:</label>
+                        <input type="range" id="enzyme-slider" min="0" max="100" value="0">
+                        <p id="slider-value">0% 투여됨</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- [슬라이드 4] 효소 저해제 -->
+        <section class="slide bg-dark">
+            <div class="content">
+                <h2>3. 효소 저해 (리피토, 네비라핀)</h2>
+                <div class="placeholder-box">
+                    <p>경쟁적 저해(활성 부위 결합)와 비경쟁적 저해(알로스테릭 결합)의 차이를 여기에 서술하세요.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
